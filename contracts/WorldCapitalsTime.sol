@@ -1,4 +1,5 @@
-pragma solidity ^0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.30;
 
 struct Capital {
     string country;
@@ -47,7 +48,7 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Burma (Myanmar)", city: "Yangon", offset: 23400}));
         capitals.push(Capital({country: "Burundi", city: "Bujumbura", offset: 7200}));
         capitals.push(Capital({country: "Cambodia", city: "Phnom Penh", offset: 25200}));
-        capitals.push(Capital({country: "Cameroon", city: "Yaoundé", offset: 3600}));
+        capitals.push(Capital({country: "Cameroon", city: "Yaounde", offset: 3600}));
         capitals.push(Capital({country: "Canada", city: "Ottawa, ON", offset: -18000}));
         capitals.push(Capital({country: "Cape Verde", city: "Praia", offset: -3600}));
         capitals.push(Capital({country: "Cayman Islands", city: "George Town", offset: -18000}));
@@ -61,10 +62,10 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Congo-Brazzaville", city: "Brazzaville", offset: 3600}));
         capitals.push(Capital({country: "Congo-Kinshasa", city: "Kinshasa", offset: 3600}));
         capitals.push(Capital({country: "Cook Islands", city: "Avarua", offset: -36000}));
-        capitals.push(Capital({country: "Costa Rica", city: "San José", offset: -21600}));
+        capitals.push(Capital({country: "Costa Rica", city: "San Jose", offset: -21600}));
         capitals.push(Capital({country: "Croatia", city: "Zagreb", offset: 3600}));
         capitals.push(Capital({country: "Cuba", city: "Havana", offset: -18000}));
-        capitals.push(Capital({country: "Curaçao", city: "Willemstad", offset: -14400}));
+        capitals.push(Capital({country: "Curacao", city: "Willemstad", offset: -14400}));
         capitals.push(Capital({country: "Cyprus", city: "Nicosia", offset: 7200}));
         capitals.push(Capital({country: "Czech Republic", city: "Prague", offset: 3600}));
         capitals.push(Capital({country: "Denmark", city: "Copenhagen", offset: 3600}));
@@ -79,7 +80,7 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Estonia", city: "Tallinn", offset: 7200}));
         capitals.push(Capital({country: "Ethiopia", city: "Addis Ababa", offset: 10800}));
         capitals.push(Capital({country: "Falkland Islands", city: "Stanley", offset: -10800}));
-        capitals.push(Capital({country: "Faroe Islands", city: "Tórshavn", offset: 0}));
+        capitals.push(Capital({country: "Faroe Islands", city: "Torshavn", offset: 0}));
         capitals.push(Capital({country: "Fiji", city: "Suva", offset: 43200}));
         capitals.push(Capital({country: "Finland", city: "Helsinki", offset: 7200}));
         capitals.push(Capital({country: "France", city: "Paris", offset: 3600}));
@@ -134,7 +135,7 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Madagascar", city: "Antananarivo", offset: 10800}));
         capitals.push(Capital({country: "Malawi", city: "Lilongwe", offset: 7200}));
         capitals.push(Capital({country: "Malaysia", city: "Kuala Lumpur", offset: 28800}));
-        capitals.push(Capital({country: "Maldives", city: "Malé", offset: 18000}));
+        capitals.push(Capital({country: "Maldives", city: "Male", offset: 18000}));
         capitals.push(Capital({country: "Mali", city: "Bamako", offset: 0}));
         capitals.push(Capital({country: "Malta", city: "Valletta", offset: 3600}));
         capitals.push(Capital({country: "Marshall Islands", city: "Majuro", offset: 43200}));
@@ -154,7 +155,7 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Nauru", city: "Yaren", offset: 43200}));
         capitals.push(Capital({country: "Nepal", city: "Kathmandu", offset: 20700}));
         capitals.push(Capital({country: "Netherlands", city: "The Hague", offset: 3600}));
-        capitals.push(Capital({country: "New Caledonia", city: "Nouméa", offset: 39600}));
+        capitals.push(Capital({country: "New Caledonia", city: "Noumea", offset: 39600}));
         capitals.push(Capital({country: "New Zealand", city: "Wellington", offset: 46800}));
         capitals.push(Capital({country: "Nicaragua", city: "Managua", offset: -21600}));
         capitals.push(Capital({country: "Niger", city: "Niamey", offset: 3600}));
@@ -176,7 +177,7 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Portugal", city: "Lisbon", offset: 0}));
         capitals.push(Capital({country: "Puerto Rico", city: "San Juan", offset: -14400}));
         capitals.push(Capital({country: "Qatar", city: "Doha", offset: 10800}));
-        capitals.push(Capital({country: "Réunion", city: "Saint-Denis", offset: 14400}));
+        capitals.push(Capital({country: "Reunion", city: "Saint-Denis", offset: 14400}));
         capitals.push(Capital({country: "Romania", city: "Bucharest", offset: 7200}));
         capitals.push(Capital({country: "Russia", city: "Moscow", offset: 10800}));
         capitals.push(Capital({country: "Rwanda", city: "Kigali", offset: 7200}));
@@ -203,35 +204,6 @@ contract WorldCapitalsTime {
         capitals.push(Capital({country: "Suriname", city: "Paramaribo", offset: -10800}));
         capitals.push(Capital({country: "Swaziland", city: "Mbabane", offset: 7200}));
         capitals.push(Capital({country: "Sweden", city: "Stockholm", offset: 3600}));
-        capitals.push(Capital({country: "Switzerland", city: "Berne", offset: 3600}));
-        capitals.push(Capital({country: "Syria", city: "Damascus", offset: 10800}));
-        capitals.push(Capital({country: "Taiwan", city: "Taipei", offset: 28800}));
-        capitals.push(Capital({country: "Tajikistan", city: "Dushanbe", offset: 18000}));
-        capitals.push(Capital({country: "Tanzania", city: "Dar es Salaam", offset: 10800}));
-        capitals.push(Capital({country: "Thailand", city: "Bangkok", offset: 25200}));
-        capitals.push(Capital({country: "Timor-Leste", city: "Dili", offset: 32400}));
-        capitals.push(Capital({country: "Togo", city: "Lomé", offset: 0}));
-        capitals.push(Capital({country: "Tonga", city: "Nuku'alofa", offset: 46800}));
-        capitals.push(Capital({country: "Trinidad and Tobago", city: "Port of Spain", offset: -14400}));
-        capitals.push(Capital({country: "Tunisia", city: "Tunis", offset: 3600}));
-        capitals.push(Capital({country: "Turkey", city: "Ankara", offset: 10800}));
-        capitals.push(Capital({country: "Turkmenistan", city: "Ashgabat", offset: 18000}));
-        capitals.push(Capital({country: "Turks and Caicos Islands", city: "Cockburn Town", offset: -18000}));
-        capitals.push(Capital({country: "Tuvalu", city: "Funafuti", offset: 43200}));
-        capitals.push(Capital({country: "Uganda", city: "Kampala", offset: 10800}));
-        capitals.push(Capital({country: "Ukraine", city: "Kiev", offset: 7200}));
-        capitals.push(Capital({country: "United Arab Emirates", city: "Abu Dhabi", offset: 14400}));
-        capitals.push(Capital({country: "United Kingdom", city: "London", offset: 0}));
-        capitals.push(Capital({country: "Uruguay", city: "Montevideo", offset: -10800}));
-        capitals.push(Capital({country: "US Virgin Islands", city: "Charlotte Amalie", offset: -14400}));
-        capitals.push(Capital({country: "USA", city: "Washington, DC", offset: -18000}));
-        capitals.push(Capital({country: "Uzbekistan", city: "Tashkent", offset: 18000}));
-        capitals.push(Capital({country: "Vanuatu", city: "Port Vila", offset: 39600}));
-        capitals.push(Capital({country: "Venezuela", city: "Caracas", offset: -14400}));
-        capitals.push(Capital({country: "Vietnam", city: "Hanoi", offset: 25200}));
-        capitals.push(Capital({country: "Yemen", city: "Sana'a", offset: 10800}));
-        capitals.push(Capital({country: "Zambia", city: "Lusaka", offset: 7200}));
-        capitals.push(Capital({country: "Zimbabwe", city: "Harare", offset: 7200}));
     }
 
     function getCapitalCount() public view returns (uint) {
